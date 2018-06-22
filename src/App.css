@@ -1,0 +1,112 @@
+.App {
+  text-align: center;
+}
+html {
+  background-color: #CDF6FE;
+}
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
+  color: #6c7071;
+}
+strong {
+    font-size: 2em;
+}
+small {
+  margin: 10px;
+}
+.flex-container, .form, .data-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.flex-container {
+    flex-direction: column;
+    align-items: center;
+}
+.form {
+  margin-top: 2em;
+}
+.form__input {
+  padding: 16px;
+  width: 300px;
+  border-color: transparent;
+  font-size: 0.90rem;
+}
+.form__button {
+    background-color: #ff8214;
+    color: #fff;
+    font-size: 2rem;
+    padding-top: 6px;
+    border: transparent;
+}
+.data-wrapper {
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  margin-top: 3em;
+  padding: 20px;
+  min-height: 500px;
+  background-color: #323747;
+  box-shadow: 1px 5px 20px 1px rgb(80, 85, 90);
+}
+.data__city {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin: 1em;
+}
+.data__quality {
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.data__quality__aqi strong {
+  font-size: 6rem;
+}
+.data__date {
+    text-align: right;
+    font-style: italic;
+    margin: 5px;
+    padding: 5px;
+    font-size: 13px;
+}
+.data__quality__periods {
+    font-size: 1.3rem;
+}
+.data__quality__text {
+    margin-left: 0.5em;
+}
+.data__quality__aqi, .data__quality {
+  margin-bottom: 1em;
+}
+.data__indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.data__quality__description {
+    font-size: 0.90rem;
+}
+.good {
+  box-shadow: 0px 0px 34px 1px #ACF9B1;
+}
+.moderate {
+  box-shadow: 0px 0px 34px 1px #c39848;
+}
+.aerisApi {
+  width: 7em;
+  height: 50px;
+  position: absolute;
+}
+@media all and (max-width: 500px) {
+  .flex-container {
+      align-items: center;
+      flex-wrap: wrap;
+  }
+}
+
+@media all and (min-width: 500px) {
+  .data-wrapper {
+      width: 400px;
+  }
+}
